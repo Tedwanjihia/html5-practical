@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Media</title>
+  <meta name="description" content="Media page with responsive images, audio, and video." />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="canonical" href="https://example.com/media.html" />
+</head>
+<body>
+  <a href="#main">Skip to content</a>
+  <header>
+    <h1>Media Demo</h1>
+    <nav aria-label="Primary">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="media.html" aria-current="page">Media</a></li>
+        <li><a href="extras.html">Extras</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <h2>Responsive Image</h2>
+    <figure>
+      <picture>
+        <source srcset="assets/images/hero-large.jpg" media="(min-width: 1000px)">
+        <source srcset="assets/images/hero-medium.jpg" media="(min-width: 600px)">
+        <img src="assets/images/hero-small.jpg" alt="A descriptive view of the campus innovation hub">
+      </picture>
+      <figcaption>Responsive image using the <code>&lt;picture&gt;</code> element.</figcaption>
+    </figure>
+
+    <h2>Audio</h2>
+    <audio controls>
+      <source src="assets/audio/sample.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+
+    <h2>Video with Captions</h2>
+    <video controls width="640" poster="assets/images/hero-medium.jpg">
+      <source src="assets/video/sample.mp4" type="video/mp4">
+      <source src="assets/video/sample.webm" type="video/webm">
+      <track src="assets/captions/sample.vtt" kind="captions" srclang="en" label="English" default>
+      Sorry, your browser doesn't support embedded videos.
+    </video>
+  </main>
+
+  <footer>
+    <p>&copy; <time datetime="2025">2025</time> Your Name.</p>
+  </footer>
+</body>
+</html>
