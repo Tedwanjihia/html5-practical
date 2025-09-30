@@ -1,2 +1,41 @@
-body { font-family: system-ui, sans-serif; background: #f9f9f9; color: #222; }
-/* full CSS content was generated earlier */
+/* Basic site styles */
+
+:root {
+  --bg: #ffffff;
+  --fg: #222222;
+  --brand: #0055cc;
+  --brand-contrast: #ffffff;
+  --font-sans: system-ui, sans-serif;
+}
+
+body {
+  font-family: var(--font-sans);
+  background: var(--bg);
+  color: var(--fg);
+  line-height: 1.6;
+  margin: 0;
+  padding: 1rem;
+}
+
+header, footer {
+  background: var(--brand);
+  color: var(--brand-contrast);
+  padding: 1rem;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 1rem;
+}
+
+nav a {
+  color: var(--brand-contrast);
+  text-decoration: none;
+}
+
+nav a:hover,
+nav a:focus {
+  text-decoration: underline;
+}
